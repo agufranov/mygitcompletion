@@ -3335,3 +3335,7 @@ alias gl='git log'
 __git_complete gl _git_log
 alias gr='git rebase'
 __git_complete gr _git_rebase
+alias gst='git stash'
+__git_complete gst _git_stash
+alias gcp='git cherry-pick'
+__git_complete gcp _git_cherry_pick
