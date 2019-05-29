@@ -3326,7 +3326,7 @@ __git_complete gc _git_checkout
 alias gpl='git pull'
 __git_complete gpl _git_pull
 alias gps='git push'
-alias gpsf='git push --force-with-lease'
+alias gpsf='git push --force-with-lease origin $(git rev-parse --abbrev-ref HEAD)'
 alias gpsn='git push -u origin $(git rev-parse --abbrev-ref HEAD)'
 __git_complete gps _git_push
 alias gd='git diff'
