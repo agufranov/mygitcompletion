@@ -3325,6 +3325,8 @@ alias gc='git checkout'
 __git_complete gc _git_checkout
 alias gpl='git pull'
 __git_complete gpl _git_pull
+alias gf='git fetch'
+__git_complete gf _git_fetch
 alias gps='git push'
 alias gpsf='git push --force-with-lease origin $(git rev-parse --abbrev-ref HEAD)'
 alias gpsn='git push -u origin $(git rev-parse --abbrev-ref HEAD)'
