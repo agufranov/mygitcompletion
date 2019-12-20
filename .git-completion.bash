@@ -3342,3 +3342,4 @@ __git_complete gst _git_stash
 alias gcp='git cherry-pick'
 __git_complete gcp _git_cherry_pick
 alias gcb='git rev-parse --abbrev-ref HEAD'
+alias ogcb='echo "origin/$(gcb)"'
