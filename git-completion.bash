@@ -3343,4 +3343,4 @@ alias gcp='git cherry-pick'
 __git_complete gcp _git_cherry_pick
 alias gcb='git rev-parse --abbrev-ref HEAD'
 alias ogcb='echo "origin/$(gcb)"'
-alias gnow='git commit --amend --date="$(date +%FT%T%z)"'
+alias gnow='git commit --amend --reset-author --no-edit'
