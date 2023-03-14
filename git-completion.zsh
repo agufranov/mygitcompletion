@@ -13,7 +13,9 @@ alias gst='git stash'
 alias gcp='git cherry-pick'
 alias gcb='git rev-parse --abbrev-ref HEAD'
 alias ogcb='echo "origin/$(gcb)"'
+alias grho='git reset --hard $(ogcb)'
 alias gnow='git commit --amend --reset-author --no-edit'
 alias glt='git describe --tags $(git rev-list --tags --max-count=1)'
-alias gstg7='git branch -f staging/staging7 && git push origin staging/staging7 --no-verify --force'
-alias gstg9='git branch -f staging/staging9 && git push origin staging/staging9 --no-verify --force'
+alias gfm="git fetch origin master:master"
+alias gfrm="gfm && git rebase master --autostash"
+alias gfmm="gfm && git merge master --autostash"
