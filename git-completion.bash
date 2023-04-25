@@ -3323,7 +3323,7 @@ alias gb='git branch'
 __git_complete gb _git_branch
 alias gc='git checkout'
 __git_complete gc _git_checkout
-alias gpl='git pull'
+alias gpl='git pull --autostash'
 __git_complete gpl _git_pull
 alias gf='git fetch'
 __git_complete gf _git_fetch
